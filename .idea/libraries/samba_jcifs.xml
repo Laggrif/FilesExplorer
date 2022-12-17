@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="samba.jcifs" type="repository">
+    <properties maven-id="org.samba.jcifs:jcifs:1.3.14-kohsuke-1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/samba/jcifs/jcifs/1.3.14-kohsuke-1/jcifs-1.3.14-kohsuke-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

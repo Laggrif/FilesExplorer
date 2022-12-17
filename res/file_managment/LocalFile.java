@@ -17,7 +17,12 @@ public class LocalFile implements Source<LocalFile> {
         this.parent = this.path.getParentFile();
     }
 
-    public LocalFile(File path, File parent) {
+    public LocalFile(File path) {
+        this.path = path;
+        this.parent = this.path.getParentFile();
+    }
+
+    private LocalFile(File path, File parent) {
         this.path = path;
         this.parent = parent;
     }
@@ -68,7 +73,7 @@ public class LocalFile implements Source<LocalFile> {
     }
 
     @Override
-    public String getName() { return (this.parent != null) ? this.path.getName() : "/"; }
+    public String getName() { return (this.parent != null) ? this.path.getName() : this.path.getAbsolutePath(); }
 
     @Override
     public String toString() { return path.getAbsolutePath(); }
