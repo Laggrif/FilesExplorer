@@ -10,6 +10,7 @@ import java.io.IOException;
 public class RemoteFileTest {
 
     public static void main(String[] args) throws IOException {
+
         try (SMBClient c = new SMBClient()) {
             try (Connection connection = c.connect("192.168.0.163")) {
                 AuthenticationContext ac = new AuthenticationContext("pi", "rpi".toCharArray(), "192.168.0.163");
