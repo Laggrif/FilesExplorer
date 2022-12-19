@@ -1,7 +1,5 @@
 package file_managment;
 
-import java.io.File;
-
 public interface Source<E> {
     default E[] listDir() { return null; }
 

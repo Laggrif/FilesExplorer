@@ -44,10 +44,13 @@ public class SMBConnect {
         List<Server> loadCustomName();
     }
 
+    /*
     @Database(entities = {Server.class}, version = 1)
     public abstract class ServerDatabase extends androidx.room.RoomDatabase {
         public abstract ServerDAO serverDAO();
     }
+    
+     */
 
 }
 

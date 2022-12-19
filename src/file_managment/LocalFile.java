@@ -69,7 +69,7 @@ public class LocalFile implements Source<LocalFile> {
     public String getExtension() {
         if (isDir()) { throw new IllegalArgumentException("Directories don't have extensions"); }
         String[] str = this.getName().split("\\.");
-        return (str[0].length() > 0 && str.length >= 2) ? ".".concat(str[str.length - 1]) : "";
+        return (str[0].length() > 0 && str.length >= 2 || str.length >= 3) ? ".".concat(str[str.length - 1]) : "";
     }
 
     @Override
